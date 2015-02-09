@@ -31,6 +31,13 @@ namespace Source
             Length--;
         }
 
+        public void InsertAt(int index, string input)
+        {
+            MoveItemsUpByOneIndex(index);
+            _underlyingDataStructure[index] = input;
+            Length++;
+        }
+
         private void MoveItemsDownByOneIndex(int startindex)
         {
             for (int i = startindex ; i < _underlyingDataStructure.Count; i++)
@@ -38,6 +45,16 @@ namespace Source
                 var itemToMoveDown = _underlyingDataStructure[i+1];
                 _underlyingDataStructure[i] = itemToMoveDown;
                 _underlyingDataStructure.Remove(i+1);
+            }
+        }
+
+        private void MoveItemsUpByOneIndex(int startindex)
+        {
+            for (int i = _underlyingDataStructure.Count; i > startindex; i--)
+            {
+                var itemToMoveUp = _underlyingDataStructure[i-1];
+                _underlyingDataStructure[i] = itemToMoveUp;
+                _underlyingDataStructure.Remove(i-1);
             }
         }
     }
