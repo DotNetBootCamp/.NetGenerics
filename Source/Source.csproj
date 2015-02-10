@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="GenericList.cs" />
     <Compile Include="IMediaItemQuery.cs" />
-    <Compile Include="IMediaQueueService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringList.cs" />
   </ItemGroup>
