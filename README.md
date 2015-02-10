@@ -58,4 +58,3 @@ This is an alias for:
 	- Items that are any other .net class that can be newed up with a default constructor
 3. Each queue you implement must have a public push and pop method
 4. It's up to you if you implement one queue or 3
-5. Your application must implement the IMediaQueueService interface 
