@@ -42,6 +42,7 @@
     <Compile Include="GenericList.cs" />
     <Compile Include="IMediaItemQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExampleSolution.cs" />
     <Compile Include="StringList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
